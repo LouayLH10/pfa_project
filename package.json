@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy":"next build"
+    "deploy": "next build && next export"
   },
   "dependencies": {
     "framer-motion": "^12.4.10",
