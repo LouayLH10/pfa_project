@@ -4,12 +4,12 @@ import Button from '../ui/Button'
 import {motion, AnimatePresence } from 'framer-motion';
 
 function FirstSection() {
-    const images=['/backhome1.jpg ','/backhome2.jpg','/backhome3.jpg']
+    const images=['/backhome1.jpg ','/backhome2.jpg','/backhome3.jpg','/backhome.jpg']
     const [index,setIndex]=useState(0)
     useEffect(()=>{
         const interval = setInterval(() => {
             setIndex((prevIndex) => (prevIndex + 1) % images.length);
-          }, 4000);
+          }, 3000);
           return () => clearInterval(interval);
     },[]);
   return (
@@ -22,7 +22,7 @@ function FirstSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1.5 }} 
+          transition={{ duration: 0.4 }} 
         />
 
         </AnimatePresence>
