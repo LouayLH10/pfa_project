@@ -211,13 +211,18 @@ border-bottom-right-radius:25px ;
     border-top-right-radius: 25px;
     font-family: 'Poppins', sans-serif;
 }
-.crd-container .card{
+ .card{
 display: inline-block;
-width: 30%;
-margin-left: 20px;
+width: 400px;
+margin-left: 50px;
 border-radius: 25px;
 padding: 5px;
 box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+margin-top: 50px;
+}
+.courses-container{
+    justify-content: center;
+    padding: 20px 20px;
 }
 .card .crs-desc{
     margin-top: 10px;
@@ -226,7 +231,7 @@ box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
     font-size: 16px;
     line-height: 1.5;
     text-indent: 20px;
-    padding: 5px 5px;
+ 
 }
 .card .cre-jn{
     width: 50%;
@@ -494,3 +499,42 @@ width:45%;
         margin-right: 10px;
     }
    }
+   .flex{
+    position: relative;
+    border: 25px;
+   }
+.flex .drp{
+    position: absolute;
+    top: 50px;
+}
+.dpbtn{
+    color: var(--firstcolor);
+    font-weight: bold;
+    border-radius: 25px;
+    transition: ease-in-out 0.3s;
+}
+.dpbtn:focus{
+    background-color: var(--secondecolor);
+    color: aliceblue;
+}
+.frmsearch{
+
+    padding: 10px 10px;
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+.searchbtn{
+    background-color: var(--firstcolor);
+    cursor: pointer;
+    color: var(--secondecolor);
+    font-weight: bold;
+    transition: ease-in-out 0.3s;
+    
+}
+.searchbtn:hover{
+    background-color: var(--secondecolor);
+    color: var(--firstcolor);
+}

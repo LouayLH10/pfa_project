@@ -1,15 +1,22 @@
 import React from 'react'
 import Button from './Button'
 
-function Card() {
+function Card({titcrs,desc}) {
+  const truncateText = (text, wordLimit) => {
+    const words = text.split(' ');
+    if (words.length > wordLimit) {
+      return words.slice(0, wordLimit).join(' ') + '...';
+    }
+    return text;
+  }
   return (
     <div className='card'>
 <div className='crs-tit'>
-    ReactJS Course
+{    titcrs }
 </div>
 <img src='/cardtest1.jpg' />
 <div className='crs-desc'>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis ipsam asperiores voluptatum, modi saepe ipsum accusantium unde laboriosam voluptates delectus quasi ipsa iusto, cupiditate possimus? Tempore commodi nam doloremque eos.
+{truncateText(desc, 10)}
 </div>
 <div className='cre-jn'>
     <Button type='button' txt='Join Now'/>

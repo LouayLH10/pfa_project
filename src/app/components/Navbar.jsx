@@ -18,6 +18,9 @@ useEffect(()=>{
   else if(path==="/about"){
      document.querySelector(".about").style.color="#fca311"
   }
+  else if(path==="/courses"){
+    document.querySelector(".courses").style.color="#fca311"
+ }
 })
 
   return (
@@ -131,7 +134,7 @@ useEffect(()=>{
             </li>
             <li>
               <Link
-                href="#"
+                href="/courses"
                 className="block py-2 px-3 text-[#14213d] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#fca311] md:p-0 light:text-white md:light:hover:text-blue-500 light:hover:bg-gray-700 light:hover:text-white md:light:hover:bg-transparent light:border-gray-700 courses"
               >
                 Courses
