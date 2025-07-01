@@ -1,0 +1,29 @@
+{
+  "homepage": "https://louaylh10.github.io/pfa_project/",
+  "name": "e_leaning",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "next build && next export"
+  },
+  "dependencies": {
+    "apexcharts": "^4.5.0",
+    "axios": "^1.8.4",
+    "framer-motion": "^12.4.10",
+    "gh-pages": "^6.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^3.1.2",
+    "next": "^15.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "simple-datatables": "^10.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4"
+  }
+}
