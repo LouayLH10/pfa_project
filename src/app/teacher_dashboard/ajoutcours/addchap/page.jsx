@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import AddChap from './addchap';
+import AddChap from './AddChap';
 
 export default function Page() {
   return (
